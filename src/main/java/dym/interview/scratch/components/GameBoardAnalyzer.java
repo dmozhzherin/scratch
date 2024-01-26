@@ -13,8 +13,7 @@ import static java.math.BigDecimal.ZERO;
 /**
  * Analyze gameboard and calculate reward. Not thread-safe.
  * <p>
- * It's funny how testability and security requirements affect incapsulation,
- * as in classic OOP a game board would be responsible for its own analysis.
+ * In classic OOP a game board would be responsible for its own analysis.
  * However, most logic would be incapsulated in private methods and thus difficult to test.
  * And as long as the game board is immutable and does not contain any business logic
  * and/or information (probabilities, reward multipliers), it's safe to pass it around.
